@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+ 
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 30px;
+    color: #888;
+    background: #79A7A8;
+}
+ 
+.container {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+ 
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+ 
+#contact h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+ 
+.form-control{
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+ 
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+ 
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+ 
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #79A7A8;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+ 
+#contact button[type="submit"]:hover {
+    background: #355C7D;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+ 
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+
+.iletisim {
+    display:-webkit-flex;
+    align-items: center;
+    gap: 20px;
+    width: 50rem;
+    margin-left: -10rem;
+    
+}
+
+.iletisim .iletisim-eleman {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 25px 20px;
+    width: 500px;
+    height: 300px;
+    overflow: auto;  
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 4rem;
+}
+
+.iletisim .iletisim-baslik {
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    color: white;
+    
+}
+
+.iletisim .iletisim-bilgi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*Her hat arasındaki boşluklar birbirine eşit olur.*/
+    margin-bottom: 15px;
+    color: white;
+}
+
+.iletisim .iletisim-bilgi  {
+    font-weight: bold;
+}
+.iletisim-isim{
+
+    color: white;
+    font-size:medium;
+}
+
+.sosyal-linkler {
+    display: flex;
+    justify-content: center;
+    gap: 55px;  
+    font-size: large;
+}
+
+.sosyal-linkler a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sosyal-linkler a i
+{
+ position: relative;
+transition: all .3s ease-in;
+width:30px;
+height:30px;
+padding:5px;
+}
+.sosyal-linkler a i:hover
+{
+    -ms-transform: scale(1);  
+    -moz-transform: scale(2);
+    transform: scale(3);
+}
+   
+
+.sosyal-linkler a i.ig {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <?xml version="1.0" encoding="utf-8" ?>
+    <configuration>
+        <connectionStrings>
+            <add name="myConnectionString" connectionString="Data Source=Server; Initial Catalog=Veritabani;Persist Security Info=False; User ID=EREN;" />
+        </connectionStrings>
+    </configuration>
+    <title>İLETİŞİM</title>
+    <link rel="stylesheet" href="iletişim.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic;">
+</head>
+ 
+<body>
+    <a href="flim.html"><i class="fa-solid fa-arrow-left-long" style="color: aliceblue; height: 12rem; width: 12rem; justify-content: center;"  >Ana Sayfa</i></a>
+    <div class="icerik">
+        <div class="container" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <div class="iletisim">
+                <div class="iletisim-eleman">
+                    <h3 class="iletisim-baslik">
+                        İletişim Bilgileri
+                    </h3>
+                    <div class="iletisim-bilgi" >
+                        <div class="iletisim-isim">Eposta Adresi:</div>
+                        <div class="iletisim-metin">eren18tarhan@gmail.com</div>
+                    </div>
+                    <div class="iletisim-bilgi">
+                        <div class="iletisim-isim">Telefon Numarası:</div>
+                        <div class="iletisim-metin">+90 552 589 82 75</div>
+                    </div>
+                    <div class="iletisim-bilgi">
+                        <div class="iletisim-isim">Şehir:</div>
+                        <div class="iletisim-metin">Çankırı/Çerkeş</div>
+                    </div>
+                </div>
+                <div class="iletisim-eleman">
+                    <h3 class="iletisim-baslik">
+                        Sosyal Medya Bilgileri
+                    </h3>
+                    <div class="sosyal-linkler">
+                        <a href="https://www.instagram.com/eren_tarhan18_/">
+                            <i class="fab fa-instagram ig"></i>
+                            Instagram
+                        </a>
+                        
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="contact" action="" method="">
+            <h2>İletişim Sayfası</h2>
+            <div class="form-control">
+                <input placeholder="Adınız Soyadınız" type="text" required autofocus>
+            </div>
+            <div class="form-control">
+                <input placeholder="E-Posta Adresiniz" type="email" required>
+            </div>
+            <div class="form-control">
+                <input placeholder="Konu" type="text" required>
+            </div>
+            <div class="form-control">
+                <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required></textarea>
+            </div>
+            <div class="form-control">
+                <button name="submit" type="submit" id="submit">GÖNDER</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('contact').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let inputs = event.target.elements;
+            let isValid = true;
+            for (let i = 0; i < inputs.length - 1; i++) {
+                if (inputs[i].value === '') {
+                    isValid = false;
+                    break;
+                }
+            }
+            if (isValid) {
+                alert('Form başarıyla gönderildi.');
+                inputs[3].value = '';
+                inputs[2].value = '';
+                inputs[1].value = '';
+                inputs[0].value = '';
+            } else {
+                alert('Lütfen tüm alanları doldurunuz.');
+            }
+        });
+    </script>
+</body>
+</html>
+ 

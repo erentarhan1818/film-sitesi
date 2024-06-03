@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td img {
+    width: 100%;
+    height: auto;
+}

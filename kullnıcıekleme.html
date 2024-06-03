@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center " >
+                        <h5 class="card-title" >Kullanıcı Girişi</h5>
+                    </div>
+                    <div class="card-body"> 
+                        <form>
+                            <div class="mb-3">
+                                <label for="isimsoyad" class="form-label">Ad Soyad </label>
+                                <input type="isimsoyad" class="form-control" id="email" placeholder="isim ve soyad girin" required>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-posta Adresi </label>
+                                <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin" required>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for=" password" class="form-label"> yeni Şifre</label>
+                                <input type="password" class="form-control" id="password " placeholder="şifre Belirleyin" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for=" password" class="form-label">Şifre tekrar</label>
+                                <input type="password" class="form-control" id="password " placeholder="şifre tekrar" required>
+                            </div>
+                            <div class="form-group" required>
+                                
+                                <label for="exampleSelect"> Rol</label>
+                                <select class="form-control" id="exampleSelect" required>
+                                  <option selected disabled>seçiniz</option>
+                                  <option value="admin">yönetici</option>
+                                  <option value="user">Kullanıcı</option>
+                                  <option value="manager">yönetici yardımcısı</option>
+                                
+                                </select>
+                              </div>
+                              <div class=" text-center">
+                                <button type="submit"  class=" btn btn-primary bg-success text-white ">  Giriş Yap</button>                
+                            </div>
+                           
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function kontrolEt() {
+          var password = document.getElementById('password').value;
+          var confirmPassword = document.getElementById('sconfirmPassword').value;
+    
+          if (password === confirmPassword) {
+            alert('Şifreler eşleşiyor. Yeni şifreniz kaydedilebilir.');
+            
+          } else {
+            alert('Şifreler eşleşmiyor. Lütfen aynı şifreyi girin.');
+          }
+        }
+      </script>
+    
+</body>
+</html>
